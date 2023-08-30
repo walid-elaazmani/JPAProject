@@ -20,6 +20,16 @@ public class StorageApp {
 
         IProductSevice productSevice = new ProductService();
 
-        productSevice.addProduct(p2);
+
+        productSevice.addProduct(p1);
+
+        System.out.println(productSevice.getProduct(1)); // return product with id 1, added product "p1" - OK!
+        System.out.println(productSevice.getProduct(2)); // null, bestaat niet - OK!
+
+        p1.setName("updated Apple");
+        System.out.println(p1);
+        productSevice.updateProduct(p1); // apple -> updated  apple in DB - OK!
+
+        productSevice.deleteProduct(p1); // apple deleted from DB - OK!
     }
 }

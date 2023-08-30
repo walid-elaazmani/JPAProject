@@ -20,6 +20,7 @@ public class ProductService implements IProductSevice {
 
     @Override
     public void updateProduct(Product product) {
+        repo.updateProduct(product);
 
     }
 
@@ -30,6 +31,6 @@ public class ProductService implements IProductSevice {
 
     @Override
     public void deleteProduct(Product product) {
-
+        repo.deleteProduct(product);
     }
 }
