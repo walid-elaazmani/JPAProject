@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="11a25532-a72b-4d9b-8d71-4198594a9c77" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/intecbrussel/StorageApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/intecbrussel/config/EMFProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/intecbrussel/model/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/intecbrussel/model/Storage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/intecbrussel/repository/IProductRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/intecbrussel/repository/IStorageRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/intecbrussel/repository/ProductRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/intecbrussel/repository/StorageRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/intecbrussel/service/IProductSevice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/intecbrussel/service/IStorageService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/intecbrussel/service/ProductService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/intecbrussel/service/StorageService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="workspaceImportEnabled" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2UeIw0Fe71Y6S5UFTEQlzEDh9sY" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "settings.editor.selected.configurable": "preferences.lookFeel"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="11a25532-a72b-4d9b-8d71-4198594a9c77" name="Changes" comment="" />
+      <created>1693293855620</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1693293855620</updated>
+    </task>
+    <servers />
+  </component>
+</project>
