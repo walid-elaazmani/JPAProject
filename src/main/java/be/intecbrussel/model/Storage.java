@@ -58,6 +58,10 @@ public class Storage {
         }
     }
 
+    public void remove(Product product) {
+        storageContent.remove(product);
+    }
+
     @Override
     public String toString() {
         return "Storage{" +

@@ -1,9 +1,7 @@
 package be.intecbrussel.repository;
 
 import be.intecbrussel.config.EMFProvider;
-import be.intecbrussel.model.Product;
 import be.intecbrussel.model.Storage;
-import com.sun.source.doctree.EndElementTree;
 import jakarta.persistence.EntityManager;
 
 public class StorageRepository implements IStorageRepository {
