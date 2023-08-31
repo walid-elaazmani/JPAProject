@@ -1,9 +1,7 @@
 package be.intecbrussel.model;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
+import org.hibernate.annotations.Cascade;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -13,12 +11,33 @@ public class Storage {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
+
     private String name;
+
+    @OneToMany(fetch = FetchType.EAGER, orphanRemoval = true)
+//    @OneToMany(targetEntity = Product.class) // To remove parent, but keep children in DB
     private List<Product> storageContent;
+
+
+    protected Storage() {
+        this.storageContent = new ArrayList<>();
+    }
 
     public Storage(String name) {
         this.name = name;
         this.storageContent = new ArrayList<>();
+    }
+
+    public List<Product> getStorageContent() {
+        return storageContent;
+    }
+
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
     }
 
     public String getName() {
@@ -34,8 +53,7 @@ public class Storage {
     }
 
     public void add(Product... products){
-        for (Product product: products
-             ) {
+        for (Product product: products) {
             add(product);
         }
     }

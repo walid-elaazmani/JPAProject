@@ -6,7 +6,7 @@ public interface IStorageRepository {
     // CREATE
     void createStorage(Storage storage);
     //READ
-    Storage readStorage(String name);
+    Storage readStorage(Long id);
     //UPDATE
     void updateStorage(Storage storage);
     //DELETE

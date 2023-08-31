@@ -20,9 +20,9 @@ public class ProductRepository implements IProductRepository{
     public Product readProduct(long id) {
 
         EntityManager em = EMFProvider.getEMF().createEntityManager();
-        em.getTransaction().begin();
+        em.getTransaction().begin();// niet verplicht bij read
         Product product = em.find(Product.class, id);
-        em.getTransaction().commit();
+        em.getTransaction().commit();// niet verplicht bij read
         em.close();
 
         return product;
@@ -33,10 +33,19 @@ public class ProductRepository implements IProductRepository{
 
         EntityManager em = EMFProvider.getEMF().createEntityManager();
         em.getTransaction().begin();
-        em.merge(product);
-        em.getTransaction().commit();
-        em.close();
+//        Product mergedProduct = em.merge(product);
+//
+//        if(!mergedProduct.equals(product)){
+//            em.getTransaction().rollback();
+//        } else {
+//            em.getTransaction().commit();
+//        }
 
+        if(product.getId() != 0){
+            em.merge(product);
+        }
+
+        em.close();
     }
 
     @Override

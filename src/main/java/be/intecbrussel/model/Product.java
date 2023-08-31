@@ -1,9 +1,6 @@
 package be.intecbrussel.model;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 
 @Entity
 public class Product {
@@ -11,11 +8,9 @@ public class Product {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
 
-
     private String name;
     private double value;
     private double weight;
-
 
     protected Product() {
 
@@ -58,6 +53,7 @@ public class Product {
     public void setWeight(double weight) {
         this.weight = weight;
     }
+
 
     @Override
     public String toString() {

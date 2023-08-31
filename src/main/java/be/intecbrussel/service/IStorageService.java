@@ -7,9 +7,9 @@ public interface IStorageService{
     // CREATE
     void addStorage(Storage storage);
     // READ
-    Storage getStorage(String name);
+    Storage getStorage(Long id);
     // UPDATE
-    void deleteStorage(String name);
+    void deleteStorage(Storage storage);
     // DELETE
     void updateStorage(Storage storage);
 
